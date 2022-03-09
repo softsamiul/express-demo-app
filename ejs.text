@@ -12,7 +12,7 @@
 # What is template Engine?
 => 
 
-# Hiw to use ejs?
+# How to use ejs?
 => install: npm i ejs
 index.js or main starting point: app.set('view engine', 'ejs')
 
