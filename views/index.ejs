@@ -1,0 +1,17 @@
+<%- include("layout/header") %>
+    <main>
+      <form action="/" . method="POST" class="form">
+        <input type="text" placeholder="Enter Language" name="pLanguage" class="form-inp"/>
+        <button type="submit" class="submit-btn">Add</button>
+      </form>
+      <ol class="list">
+        <% if(plName.length > 0){ %>
+            <% for( let i = 0; i<plName.length; i++){ %>
+                <li class="list-item"><%= plName[i] %></li>
+            <% } %>
+        <% }else{ %>
+        <p class="no-data">No data found</p>
+        <% } %>
+        </ol>
+    </main>
+<%- include("layout/footer") %>   
